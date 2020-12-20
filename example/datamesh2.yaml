@@ -4,7 +4,7 @@ metadata:
   name: aws-datamesh-stack2
 spec:
   config:
-    stack: tcz001/datamesh/dev2
+    state: tcz001/datamesh/dev2
     input: 
       count: 2
     output:

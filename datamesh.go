@@ -19,7 +19,7 @@ type T struct {
 	} `yaml:"metadata"`
 	Spec struct {
 		Config struct {
-			Stack string `yaml:"stack"`
+			State string `yaml:"state"`
 			Input struct {
 				Count int `yaml:"count"`
 			} `yaml:"input"`
@@ -104,7 +104,7 @@ func main() {
 		Spec: Spec{
 			AccessTokenSecret: "pulumi-api-secret",
 			EnvSecrets:        []string{"pulumi-aws-secrets"},
-			Stack:             t.Spec.Config.Stack,
+			Stack:             t.Spec.Config.State,
 			ProjectRepo:       "https://github.com/tcz001/aws-datamesh-stack",
 			Commit:            "d1e7c3a011d81796e14b24e74b8b6f9e41a8fb0d",
 			Config: Config{
