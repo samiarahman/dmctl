@@ -1,0 +1,13 @@
+apiVersion: datamesh/v1alpha1
+kind: DataProduct
+metadata:
+  name: aws-datamesh-stack2
+spec:
+  config:
+    stack: tcz001/datamesh/dev2
+    input: 
+      count: 2
+    output:
+      count: 2
+    pipeline:
+      count: 2
